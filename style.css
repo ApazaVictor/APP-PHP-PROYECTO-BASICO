@@ -1,0 +1,40 @@
+body {
+    background-color: #f8f9fa; /* Color de fondo suave */
+}
+
+.container {
+    margin-top: 50px;
+    padding: 30px;
+    background-color: #8cb4b6; /* Fondo blanco para el formulario */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+}
+
+h6 {
+    color: #007bff; /* Color del título */
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold; /* Negrita en las etiquetas */
+}
+
+.form-control {
+    border: 1px solid #ced4da; /* Borde por defecto */
+    transition: border-color 0.2s; /* Transición suave para el borde */
+}
+
+.form-control:focus {
+    border-color: #007bff; /* Color del borde al enfocar */
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Sombra al enfocar */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Color del botón */
+    border-color: #007bff; /* Color del borde del botón */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Color al pasar el ratón */
+    border-color: #0056b3; /* Color del borde al pasar el ratón */
+}
