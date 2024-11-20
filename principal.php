@@ -13,6 +13,16 @@
 
 <body>
 <div class="container mt-5">
+<h1>PHP BASICO</h1>
+    <ul>
+        <ol>1. Operaciones con String</ol>
+        <ol>2. Operaciones Aritmeticos</ol>
+        <ol>3. Tipos de datos</ol>
+        <ol>4. Operaciones con Array</ol>
+        <ol>5. Condicionales</ol>
+        <ol>6. Ciclos</ol>
+        <ol>7. Salir</ol>
+    </ul>
         <h6>Formulario</h6>
         <hr>
         <form method="POST" action="">
@@ -25,6 +35,9 @@
     </div>
 
     <?php
+
+    include "./OperadoresLogicos";
+
     if (isset($_GET["precio"])) {
         echo $_GET["precio"];
     }
@@ -34,6 +47,11 @@
     }
 
     echo $_POST["numero"];
+
+    $ol = new OperadoresLogicos();
+    $ol-> operadores();
+    $ol-> saludar();
+
     ?>
 
 
