@@ -4,13 +4,14 @@ class OperadoresLogicos {
 
     public function operadores (){
         $numero_1= 100;
-        $numero_2= 100;
+        $numero_2= 200;
 
-        echo "Operador <:". $numero_1 < $numero_2?"True":"False";
+        echo "Operador <:". $numero_1 < $numero_2?"🐱":"👀";
 
     }
 
     public function saludar (){
+        echo "</br>";
         echo "Buenas tardes estimados estudiantes";
     }
 }
