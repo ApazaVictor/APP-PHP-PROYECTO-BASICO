@@ -1,75 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <p>Victor Hugo</p>
 
     <?php
-    // Imprimir mensaje desde PHP
-    echo "Imprimido de PHP <br>";
+    // 1. Entero
+    // $entero = 42;
 
-    $dato_1 = 1;
-    $dato_2 = 2;
+    // 2. Flotante
+    // $flotante = 3.14;
 
-    // Asegúrate de usar paréntesis correctamente para la concatenación
-    echo "El resultado es: " . ($dato_1 + $dato_2) . "<br>";
-    echo "Incremento: " . ($dato_1 + 1) . "<br>";
+    // 3. Cadena de texto
+    // $cadena = "Hola, mundo!";
 
-    // Usar llaves {} en lugar de paréntesis () para los bloques if
-    if ($dato_2 == 2) {
-        echo "No es igual<br>";
-    } else if ($dato_2 === 100) {
-        echo "Sí es igual<br>";
-    }
+    // 4. Booleano
+    // $booleano = true;
+
+    // 5. Array (arreglo)
+    // $array = array("Manzana", "Banana", "Cereza");
+
+    // 6. Objeto
+    // class Persona {
+    //     public $nombre;
+    //     public $edad;
+
+    //     public function __construct($nombre, $edad) {
+    //         $this->nombre = $nombre;
+    //         $this->edad = $edad;
+    //     }
+    // }
+    // $objeto = new Persona("Juan", 25);
+
+    // 7. Nulo
+    // $nulo = null;
+
+    // Imprimir los tipos de datos
+    // echo "Entero: " . $entero . "</br>";
+    // echo "Flotante: " . $flotante . "</br>";
+    // echo "Cadena: " . $cadena . "</br>";
+    // echo "Booleano: " . ($booleano ? 'Verdadero' : 'Falso') . "</br>";
+    // echo "Array: " . implode(", ", $array) . "</br>";
+    // echo "Objeto: Nombre - " . $objeto->nombre . ", Edad - " . $objeto->edad . "</br>";
+    // echo "Nulo: " . ($nulo === null ? 'Es nulo' : 'No es nulo') . "</br>";
     ?>
 
-    <hr>
-
-    <?php
-    // Declaración de variables
-    $nombre = "Victor";    
-    $edad = 30;       
-    $altura = 1.75;     
-    $esEstudiante = true;  
-    $materias = array("Matemáticas", "Física", "Química"); // Una variable de tipo array
-
-    // Imprimir las variables
-    echo "Nombre: " . $nombre . "<br>";
-    echo "Edad: " . $edad . "<br>";
-    echo "Altura: " . $altura . "<br>";
-    echo "Es estudiante: " . ($esEstudiante ? 'Sí' : 'No') . "<br>";
-    echo "Materias: " . implode(", ", $materias) . "<br>";
-    ?>
-
-    <hr>
-
-    <?php
-    $materias = array("siuuu", "saoo", "souuu", "look", "abcd");
-
-    for ($i = 0; $i < count($materias); $i++) {
-        echo "Materia " . ($i + 1) . ": " . $materias[$i] . "<br>";
-    }
-    ?>
-    
-     <?php
-    //Hacer todas las tablas de multiplicar del 1 al 12 y que imprimir en pantalla.
-// Iterar del 1 al 12 para las tablas de multiplicar
-//for ($i = 1; $i <= 12; $i++) {
-    //echo "Tabla de multiplicar del $i:\n";
-    
-    // Multiplicar del 1 al 10
-    //for ($j = 1; $j <= 10; $j++) {
-        //$resultado = $i * $j;
-        //echo "$i x $j = $resultado\n";
-    //}
-    
-    // Agregar una línea en blanco para separar las tablas
-    //echo "\n";
-//}
-    ?>
 </body>
+
 </html>
+=======
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas de Multiplicar</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            margin: 10px;
+            float: left;
+        }
+
+        td,
+        th {
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .clear {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Tablas de Multiplicar del 1 al 12</h1>
+
+    <?php
+    // Generar tablas del 1 al 12
+    foreach (range(1, 12) as $tabla) {
+        echo "<table>";
+        echo "<tr><th colspan='2'>Tabla del $tabla</th></tr>";
+
+        // Generar multiplicaciones del 1 al 12
+        foreach (range(1, 12) as $i) {
+            $resultado = $tabla * $i;
+            echo "<tr>";
+            echo "<td>$tabla x $i</td>";
+            echo "<td>$resultado</td>";
+            echo "</tr>";
+        }
+
+        echo "</table>";
+    }
+    ?>
+    <div class="clear"></div>
+</body>
+
+</html>
+>>>>>>> REPLACE
